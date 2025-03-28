@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umut Spot Sultan Selim</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+  <style>
+    /* Genel Stil Ayarları */
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3em;
+        text-transform: uppercase;
+    }
+
+    section {
+        padding: 20px;
+        margin: 10px auto;
+        max-width: 1200px;
+    }
+
+    .product {
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .product:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .product p {
+        font-size: 1.1em;
+        color: #4CAF50;
+    }
+
+    /* Grid Düzeni */
+    section.products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #4CAF50;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Harita Konteyneri */
+    .map-container {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        border-radius: 10px;
+    }
+
+    /* Responsive Tasarım */
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2em;
+        }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header Bölümü -->
+<header>
+  <h1>Umut Spot Sultan Selim</h1>
+  <p><i class="fas fa-cogs"></i> Beyaz Eşya ve Mobilya Satışı, Servis Hizmetleri</p>
+</header>
+
+<!-- Hizmetlerimiz Bölümü -->
+<section>
+  <h2><i class="fas fa-cogs"></i> Hizmetlerimiz</h2>
+  <p>İkinci el beyaz eşya ve mobilya satışı. Ayrıca, servis ve tamir hizmetleri sunmaktayız.</p>
+</section>
+
+<!-- Ürünlerimiz Bölümü -->
+<section class="products">
+  <h2>Ürünlerimiz</h2>
+
+  <!-- Ürün 1: Buzdolabı -->
+  <div class="product">
+    <img src="buzdolabi.JPEG" alt="Buzdolabı">
+    <p>Buzdolabı - 5000₺</p>
+  </div>
+
+  <!-- Ürün 2: Çamaşır Makinesi -->
+  <div class="product">
+    <img src="camasir_makinesi.JPEG" alt="Çamaşır Makinesi">
+    <p>Çamaşır Makinesi - 4000₺</p>
+  </div>
+
+  <!-- Ürün 3: Bulaşık Makinesi -->
+  <div class="product">
+    <img src="bulasik_makinesi.JPEG" alt="Bulaşık Makinesi">
+    <p>Bulaşık Makinesi - 4500₺</p>
+  </div>
+</section>
+
+<!-- Dükkan Adresi ve Harita Bölümü -->
+<section>
+  <h2><i class="fas fa-map-marker-alt"></i> Adres ve Harita</h2>
+  <p><strong>Adres:</strong>Sultan Selim Mahallesi Sultan Selim Cd. N0 132 Kağıthane/İstanbul</p>
+
+  <!-- Google Maps Harita -->
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187.93481066041232!2d28.995148180594704!3d41.0917867851123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab79d73c6e5c1%3A0xd66da47a5a105387!2sUMUT%20SPOT%202.EL%20BEYAZ%20E%C5%9EYA%20MOB%C4%B0LYA!5e0!3m2!1str!2str!4v1743125516984!5m2!1str!2str"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </div>
+
+  <p>Dükkanımızın konumunu yukarıdaki harita üzerinden görebilirsiniz. İletişim için bize telefonla ulaşabilirsiniz.</p>
+</section>
+
+<!-- İletişim Bölümü -->
+<section>
+  <h2><i class="fas fa-phone-alt"></i> İletişim</h2>
+  <p>Telefon: <a href="tel:+905442112300">+90 544 211 23 00</a></p>
+  <p>Email: <a href="mailto:info@dukkan.com">info@dukkan.com</a></p>
+</section>
+
+<!-- Footer Bölümü -->
+<footer>
+  &copy; 2025 Umut Spot Sultan Selim
+</footer>
+
+</body>
+</html>
